@@ -1,0 +1,50 @@
+﻿@model CodedHomes.Web.Models.RegisterModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">Register - Create a new account</div>
+    <div class="panel-body" id="loginForm">
+        <p class="lead">@Html.ActionLink("Login", "Login") if you already have an account.</p>
+
+        @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-3">@Html.LabelFor(m => m.UserName)</div>
+                    <div class="col-lg-9">
+                        @Html.TextBoxFor(m => m.UserName)
+                        @Html.ValidationMessageFor(m => m.UserName)
+                    </div>
+                </div><br />
+                <div class="row">
+                    <div class="col-lg-3">@Html.LabelFor(m => m.Password)</div>
+                    <div class="col-lg-9">
+                        @Html.PasswordFor(m => m.Password)
+                        @Html.ValidationMessageFor(m => m.Password)
+                    </div>
+                </div><br />
+                <div class="row">
+                    <div class="col-lg-3">@Html.LabelFor(m => m.ConfirmPassword)</div>
+                    <div class="col-lg-9">                        
+                        @Html.PasswordFor(m => m.ConfirmPassword)
+                    </div>
+                </div><br />
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-9">
+                        <input class="btn btn-large" type="submit" value="Register" />
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

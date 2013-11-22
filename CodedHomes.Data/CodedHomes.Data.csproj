@@ -49,24 +49,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationUnit.cs" />
     <Compile Include="Configuration\CustomDatabaseInitializer.cs" />
     <Compile Include="Configuration\HomeConfiguration.cs" />
+    <Compile Include="Configuration\MembershipConfiguration.cs" />
+    <Compile Include="Configuration\OAuthMembershipConfiguration.cs" />
+    <Compile Include="Configuration\RoleConfiguration.cs" />
     <Compile Include="Configuration\UserConfiguration.cs" />
     <Compile Include="DataContext.cs" />
     <Compile Include="GenericRepository.cs" />
     <Compile Include="HomesRepository.cs" />
     <Compile Include="IRepository.cs" />
-    <Compile Include="Migrations\201311211304265_InitialMigration.cs" />
-    <Compile Include="Migrations\201311211304265_InitialMigration.Designer.cs">
-      <DependentUpon>201311211304265_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201311220720365_InitialMigration.cs" />
+    <Compile Include="Migrations\201311220720365_InitialMigration.Designer.cs">
+      <DependentUpon>201311220720365_InitialMigration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201311211304429_InitialMigration1.cs" />
-    <Compile Include="Migrations\201311211304429_InitialMigration1.Designer.cs">
-      <DependentUpon>201311211304429_InitialMigration1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201311211305304_InitialMigration2.cs" />
-    <Compile Include="Migrations\201311211305304_InitialMigration2.Designer.cs">
-      <DependentUpon>201311211305304_InitialMigration2.cs</DependentUpon>
+    <Compile Include="Migrations\201311220724531_InitialMigration1.cs" />
+    <Compile Include="Migrations\201311220724531_InitialMigration1.Designer.cs">
+      <DependentUpon>201311220724531_InitialMigration1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -85,14 +85,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201311211304265_InitialMigration.resx">
-      <DependentUpon>201311211304265_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201311220720365_InitialMigration.resx">
+      <DependentUpon>201311220720365_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201311211304429_InitialMigration1.resx">
-      <DependentUpon>201311211304429_InitialMigration1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201311211305304_InitialMigration2.resx">
-      <DependentUpon>201311211305304_InitialMigration2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201311220724531_InitialMigration1.resx">
+      <DependentUpon>201311220724531_InitialMigration1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

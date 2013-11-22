@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+@if (ViewBag.IncludeManifest != null)
+{
+    <text>
+        <html lang="en" manifest="/homes/manifest">
+    </text>
+}
+else
+{
+    <text>
+        <html lang="en">
+    </text>
+}
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title :: CodedHomes</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("styles", required: false)
+</head>
+<body>
+
+    <div class="col-lg-12">
+        <header class="row">
+            <div class="col-lg-6">
+                <a href="/"><img alt="CodedHomes" title="CodedHomes" src="/img/coded-homes-logo.png" /></a>
+            </div>
+            <div class="col-lg-6">
+                <div class="pull-right online standout">
+                    @if (ViewBag.IncludeManifest != null)
+                    {
+                        @Html.ActionLink("Manage Account", "manage", "account")
+                    }
+                    else
+                    {
+                        @Html.Partial("_LoginPartial")
+                    }
+                </div>
+            </div>
+        </header>
+        <article class="row">
+            <div class="col-lg-12">
+                @RenderBody()
+            </div>
+        </article>
+        <footer class="row">
+            <small>&copy; @DateTime.Now.Year CodedHomes</small>
+        </footer>
+    </div>
+
+
+    @RenderSection("breakout", required: false)
+    @Scripts.Render("~/bundles/site")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

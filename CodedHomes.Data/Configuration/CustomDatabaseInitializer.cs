@@ -9,7 +9,7 @@ using CodedHomes.Models;
 
 namespace CodedHomes.Data.Configuration
 {
-    public class CustomDatabaseInitializer : CreateDatabaseIfNotExists<DataContext>
+    public class CustomDatabaseInitializer : DropCreateDatabaseIfModelChanges<DataContext>
     {
         protected override void Seed(DataContext context)
         {

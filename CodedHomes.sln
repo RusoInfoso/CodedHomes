@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{13DC46
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodedHomes.Data", "CodedHomes.Data\CodedHomes.Data.csproj", "{3A954326-FA31-47B9-8A51-016F66A17215}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodedHomes.Web", "CodedHomes.Web\CodedHomes.Web.csproj", "{2328C890-32DC-4206-AA06-B52614AA9EB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{3A954326-FA31-47B9-8A51-016F66A17215}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A954326-FA31-47B9-8A51-016F66A17215}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A954326-FA31-47B9-8A51-016F66A17215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2328C890-32DC-4206-AA06-B52614AA9EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2328C890-32DC-4206-AA06-B52614AA9EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2328C890-32DC-4206-AA06-B52614AA9EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2328C890-32DC-4206-AA06-B52614AA9EB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

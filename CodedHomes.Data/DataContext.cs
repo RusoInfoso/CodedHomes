@@ -23,6 +23,7 @@ namespace CodedHomes.Data
 
         public DbSet<Home> Homes { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
         public static string ConnectionString
         {
@@ -41,6 +42,11 @@ namespace CodedHomes.Data
         {
             modelBuilder.Configurations.Add(new HomeConfiguration());
             modelBuilder.Configurations.Add(new UserConfiguration());
+
+            // Add ASP.NET WebPages SimpleSecurity tables
+            modelBuilder.Configurations.Add(new RoleConfiguration());
+            modelBuilder.Configurations.Add(new OAuthMembershipConfiguration());
+            modelBuilder.Configurations.Add(new MembershipConfiguration());
 
             //base.OnModelCreating(modelBuilder);
         }
