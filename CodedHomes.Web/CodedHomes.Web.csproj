@@ -239,6 +239,7 @@
     <Content Include="img\homes\no-image.png" />
     <Content Include="img\property.jpg" />
     <Content Include="Scripts\app\homesDataService.js" />
+    <Content Include="Scripts\app\validationUtility.js" />
     <Content Include="Scripts\app\_mixins.js" />
     <Content Include="Scripts\lib\jquery-ui-1.10.3.js" />
     <Content Include="Scripts\lib\bootstrap.js" />
@@ -272,6 +273,7 @@
     <Compile Include="Models\RoleEvaluator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\HomesListViewModel.cs" />
+    <Compile Include="ViewModels\HomeViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -291,6 +293,7 @@
     <Content Include="Views\Account\_RemoveExternalLoginsPartial.cshtml" />
     <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
     <Content Include="Views\Homes\Index.cshtml" />
+    <Content Include="Views\Homes\Home.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
