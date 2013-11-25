@@ -239,6 +239,7 @@
     <Content Include="img\homes\no-image.png" />
     <Content Include="img\property.jpg" />
     <Content Include="Scripts\app\homesDataService.js" />
+    <Content Include="Scripts\app\_mixins.js" />
     <Content Include="Scripts\lib\jquery-ui-1.10.3.js" />
     <Content Include="Scripts\lib\bootstrap.js" />
     <Content Include="Scripts\lib\h5f.js" />

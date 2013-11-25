@@ -14,6 +14,7 @@ namespace CodedHomes.Web
                         , "~/Scripts/lib/knockout-{version}.js"
                         , "~/Scripts/lib/underscore.js"
                         , "~/Scripts/lib/H5F.js"
+                        , "~/Scripts/app/_mixins.js"
                         , "~/Scripts/app/homesDataService.js"
                         ));
 
