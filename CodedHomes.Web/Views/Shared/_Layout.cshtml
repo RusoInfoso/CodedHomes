@@ -19,6 +19,19 @@ else
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @RenderSection("styles", required: false)
+
+    <script type="text/javascript">
+        window.onerror = function (errorText, url, lineNumber) {
+            var msg = 'errorText=' + errorText + '&url='
+                + url + '&lineNumber=' + lineNumber;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/api/error', true);
+            xhr.setRequestHeader("Content-type",
+                "application/x-www-form-urlencoded");
+            xhr.send(msg);
+        };
+    </script>
 </head>
 <body>
 

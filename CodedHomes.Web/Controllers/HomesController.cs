@@ -100,6 +100,20 @@ namespace CodedHomes.Web.Controllers
             return result;
         }
 
+        [AllowAnonymous]
+        public ActionResult Manifest()
+        {
+            Response.ContentType = "text/cache-manifest";
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+
+            string viewName = "Manifest";
+
+#if DEBUG
+            viewName = "Manifest-Debug";
+#endif
+            return View(viewName);
+        }
+
         protected override void Dispose(bool disposing)
         {
             _unit.Dispose();

@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "NotFound";
+}
+
+<h2>Home Not Found</h2>
+<div class="well">
+    <p>For some reason the home you're trying to edit isn't available in the system.</p>
+    <p>Perhaps you'd like to @Html.ActionLink("view the list of all homes", "Index", "Homes") or
+        @Html.ActionLink("add a new home", "new", "Homes")?</p>
+</div>
